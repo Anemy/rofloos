@@ -8,18 +8,31 @@
 body {
   background-color: #20236c;
   padding: 30px;
+  color: #eee3ff;
+  font-family: Arial;
+}
+
+h1 {
+  position: relative;
+}
+
+h1:after {
+  content: attr(data-title);
+  position: absolute;
+  color: #20236c;
+  left: 2px;
 }
 
 a {
-  color: #3c46fb;
+  margin-top: 6px;
+  color: #eee3ff;
   position: relative;
-  text-decoration-color: #eee3ff;
-  /* text-decoration-color: rgba(236, 240, 241, 0.9);   */
-  transition: all .1s;
-  /* display: block; */
+  text-decoration-color: #3c46fb;
+  transition: all .5s;
+  display: block;
 }
 a:visited {
-  color: #3c46fb;
+  color: #eee3ff;
 }
 
 a:after {
@@ -31,9 +44,7 @@ a:after {
   height: 100%;
   width: 0;
   text-decoration: underline;
-  transition: all .25s ease 0s;
-  /* -webkit-text-decoration-color: #3ab1cd;
-  text-decoration-color: #3ab1cd; */
+  transition: all .5s ease 0s;
   text-decoration-color: #8437fd;
   overflow: hidden;
 }
@@ -42,5 +53,4 @@ a:hover:after {
 }
 a:hover {
   text-decoration-color: #e8e9ff;
-  /* text-decoration-color: rgba(236, 240, 241, 0.3); */
 }
