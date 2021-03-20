@@ -1,0 +1,46 @@
+/* #3c46fb
+#8437fd
+#ff8177
+#ffe8ae
+#e8e9ff
+#eee3ff */
+
+body {
+  background-color: #20236c;
+  padding: 30px;
+}
+
+a {
+  color: #3c46fb;
+  position: relative;
+  text-decoration-color: #eee3ff;
+  /* text-decoration-color: rgba(236, 240, 241, 0.9);   */
+  transition: all .1s;
+  /* display: block; */
+}
+a:visited {
+  color: #3c46fb;
+}
+
+a:after {
+  content: attr(data-title);
+  position: absolute;
+  color: transparent;
+  top: 1px;
+  left: 0;
+  height: 100%;
+  width: 0;
+  text-decoration: underline;
+  transition: all .25s ease 0s;
+  /* -webkit-text-decoration-color: #3ab1cd;
+  text-decoration-color: #3ab1cd; */
+  text-decoration-color: #8437fd;
+  overflow: hidden;
+}
+a:hover:after {
+  width: 100%;
+}
+a:hover {
+  text-decoration-color: #e8e9ff;
+  /* text-decoration-color: rgba(236, 240, 241, 0.3); */
+}
