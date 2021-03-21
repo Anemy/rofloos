@@ -100,3 +100,25 @@ a:hover:after {
 a:hover {
   text-decoration-color: #e8e9ff; 
 }
+
+@keyframes opacityFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  animation: opacityFadeIn 2s ease-out;
+  z-index: -2;
+}
