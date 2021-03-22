@@ -64,6 +64,9 @@
       viewBox="0 0 310.34 540.72"
     >
       <defs>
+        <filter id='noise' x='0%' y='0%' width='100%' height='100%'>
+          <feTurbulence baseFrequency="0.05" />
+        </filter>
         <linearGradient
           id="linearGradient"
           x1="-0.69"
@@ -74,12 +77,12 @@
         >
           <stop
             offset="0.09"
-            stop-color="#8437fd"
+            stop-color="#ff8177"
             stop-opacity="0.84"
           />
           <stop
             offset="0.74"
-            stop-color="#ff8177"
+            stop-color="#8437fd"
             stop-opacity="0.71"
           >
             <animate
@@ -94,7 +97,7 @@
           </stop>
           <stop
             offset="1"
-            stop-color="#ff8177"
+            stop-color="#8437fd"
             stop-opacity="0.8"
           />
         </linearGradient>
@@ -106,6 +109,7 @@
           width="310.34"
           height="540.72"
         />
+        <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none" style="opacity: 0.1"></rect>
       </g>
     </svg>
   </body>

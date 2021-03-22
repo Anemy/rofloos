@@ -7,7 +7,9 @@
 
 body {
   /* background-color: #20236c; */
-  background-color: #ff8177;
+  /* background-color: #ff8177; */
+  background-color: #8437fd;
+
   padding: 50px;
   color: #eee3ff;
   font-family: Arial;
@@ -25,11 +27,13 @@ body {
   top: 5px;
   height: 1px;
   background-color: #3c46fb;
+  /* border-bottom: 1px solid #ff8177; */
   z-index: -1;
 }
 .lines:after {
   content: '';
   background-color: #3c46fb;
+  /* border-bottom: 1px solid #ff8177; */
   position: absolute;
   bottom: -3px;
   right: 0;
@@ -39,6 +43,7 @@ body {
 .lines:before {
   content: '';
   background-color: #3c46fb;
+  /* border-bottom: 1px solid #ff8177; */
   position: absolute;
   bottom: -6px;
   right: 0;
@@ -48,7 +53,9 @@ body {
 }
 
 h1 {
-  color: #eee3ff;
+  /* color: #eee3ff; */
+  /* color: #8437fd; */
+  color: #ff8177;
   position: relative;
   letter-spacing: 0.2em;
   font-size: 2.2em;
@@ -57,7 +64,9 @@ h1 {
 h1:after {
   content: attr(data-title);
   position: absolute;
-  color: #ff8177;
+  /* color: #ff8177; */
+  color: #8437fd;
+  /* color: 8437fd; */
   left: 3px;
   top: 0px;
 }
@@ -71,7 +80,9 @@ a {
   margin-top: 10px;
   color: #eee3ff;
   position: relative;
+  /* text-decoration-color: #3c46fb; */
   text-decoration-color: #3c46fb;
+
   transition: all .5s;
   display: block;
   font-size: 1.5em;
@@ -90,7 +101,8 @@ a:after {
   width: 0;
   text-decoration: underline;
   transition: all .5s ease 0s;
-  text-decoration-color: #8437fd;
+  /* text-decoration-color: #8437fd; */
+  text-decoration-color: #ff8177;
   text-decoration-thickness: 4px;
   overflow: hidden;
 }
